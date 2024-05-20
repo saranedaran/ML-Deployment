@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Law/Regulation Prediction</title>
+</head>
+<body>
+    <div>
+        <h1>Law/Regulation Prediction</h1>
+        <form action="/predict" method="post">
+            <div>
+                <label>Attribute</label>
+                <input type="text" name="attribute" required>
+            </div>
+            <div>
+                <button type="submit">Predict</button>
+            </div>
+        </form>
+        <h2>{{ prediction_text }}</h2>
+    </div>
+</body>
+</html>
